@@ -3,8 +3,7 @@ data/calls.js
 .DS_Store
 __pycache__/
 
-# HQ-internal workspace bookkeeping (see /Users/hc/hq/CLAUDE.md's "canonical 5-file set" +
-# session-guide convention) — kept on disk for local HQ tooling (/standup, session resume)
+# Local working notes and AI-assistant session guide — kept on disk for local reference
 # but deliberately not part of this public repo's history.
 TASKS.md
 notes.md

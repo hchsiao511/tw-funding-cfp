@@ -28,8 +28,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python3 build.py
 
-      # Explicit publish allowlist (mirrors research/website/CLAUDE.md's "files to
-      # publish" convention) rather than uploading the whole repo — keeps build.py,
+      # Explicit publish allowlist rather than uploading the whole repo — keeps build.py,
       # data/sources/, .venv/, and repo-management files off the deployed site.
       - name: Assemble publish directory
         run: |

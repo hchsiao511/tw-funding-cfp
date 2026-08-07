@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣研究計畫徵求彙整 — Taiwan Funding CFP Tracker</title>
+<meta name="description" content="彙整國科會、大學研發處等單位的研究計畫徵求公告，附截止日、資格、領域篩選。開源協作，歡迎 PR 新增計畫。">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>台灣研究計畫徵求彙整</h1>
+  <p class="subtitle">
+    Taiwan Funding CFP Tracker — 國科會、大學研發處等計畫徵求，一頁看完 deadline / 領域 / 資格。
+  </p>
+  <p class="meta-links">
+    <a href="https://github.com/hchsiao511/tw-funding-cfp" target="_blank" rel="noopener">GitHub</a>
+    · <a href="https://github.com/hchsiao511/tw-funding-cfp/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">如何新增計畫 (PR)</a>
+  </p>
+</header>
+
+<main>
+  <section id="filter-bar" aria-label="篩選"></section>
+
+  <p id="result-count" class="result-count"></p>
+
+  <section id="call-list"></section>
+</main>
+
+<footer class="site-footer">
+  <p>資料為社群手動整理，正式截止日與資格請務必以官方公告連結為準。</p>
+</footer>
+
+<script src="data/calls.js"></script>
+<script src="assets/js/filter.js"></script>
+<script src="assets/js/render.js"></script>
+</body>
+</html>

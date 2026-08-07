@@ -1,0 +1,44 @@
+# Controlled vocabulary for calls.yaml. Every tag used in calls.yaml's `fields`,
+# `agencies`, `schools`, `eligibility`, and `stage` fields must be registered here first —
+# the validator hard-fails on unregistered tags. This file also feeds the frontend's
+# filter-chip labels, so `name` is the human-readable display text shown in the UI.
+#
+# Adding a new field/agency/school/eligibility category = add a row here. No code change.
+#
+# `fields` is a two-level hierarchy: `domain: true` tags (cs, other) are top-level;
+# `parent: cs` tags are CS/IE subfields — selecting the `cs` chip in the UI also surfaces
+# every entry tagged with one of its children, not just entries tagged bare `cs`.
+# `unrestricted: true` is orthogonal to the domain/subfield split: it means the call
+# itself imposes no field restriction at all (e.g. a generic bilateral exchange program),
+# so it matches *every* field filter regardless of domain. See CONTRIBUTING.md for the
+# rule on when to use it — do NOT tag `unrestricted` just because NSTC's own category
+# column says 跨領域; that word also covers calls that are topically specific but merely
+# span multiple disciplines within their own subject (e.g. indigenous studies).
+
+fields:
+  - {tag: cs, name: "Computer Science & Information Engineering 資訊工程", domain: true}
+  - {tag: ai, name: "Artificial Intelligence 人工智慧", parent: cs}
+  - {tag: security, name: "Cybersecurity 資訊安全", parent: cs}
+  - {tag: semiconductor, name: "Semiconductor 半導體", parent: cs}
+  - {tag: iot, name: "IoT / Digital Twin 物聯網與數位孿生", parent: cs}
+  - {tag: other, name: "Other Fields 其他領域", domain: true}
+  - {tag: unrestricted, name: "Open to Any Field 不限領域", unrestricted: true}
+
+agencies:
+  - {tag: nstc, name: "國科會 NSTC"}
+  - {tag: ntu, name: "臺大研發處 NTU RPA"}
+
+schools:
+  - {tag: ntu, name: "National Taiwan University 臺灣大學"}
+
+eligibility:
+  - {tag: all-faculty, name: "All Faculty 教師"}
+  - {tag: new-faculty, name: "New Faculty 新進教師"}
+  - {tag: faculty-under-45, name: "Faculty Under 45 未滿45歲教師"}
+  - {tag: phd-student, name: "PhD Students 博士生"}
+  - {tag: postdoc, name: "Postdocs 博士後研究員"}
+
+stages:
+  - {tag: concept, name: "意見徵詢 Concept/RFI"}
+  - {tag: proposal, name: "徵求中 Proposal"}
+  - {tag: rolling, name: "常態受理 Rolling"}

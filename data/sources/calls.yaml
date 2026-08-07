@@ -1,0 +1,493 @@
+# One entry per funding call. This is the file PR contributors edit.
+# Schema reference + "how to add a call" walkthrough: see ../../CONTRIBUTING.md.
+# Every tag used below (fields/agency/school/eligibility/stage) must exist in tags.yaml.
+#
+# Seed data curated 2026-08-05 from:
+#   - NSTC 計畫徵求專區 https://www.nstc.gov.tw/folksonomy/rfpList?l=ch (both pages)
+#   - NTU 研發處 RPA   https://ord.ntu.edu.tw/w/ordNTU/RPA
+#   - individual rfpDetail/news_plan detail pages, for amount/requirements/sub-area detail
+# ROC (民國) years on the source pages are converted to western years (110 -> 2021,
+# 115 -> 2026, 116 -> 2027).
+
+- id: nstc-2026-nano-innovation
+  title: "本會自然處116年度「奈米科技創新應用計畫」構想書"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: concept
+  opens: 2026-07-24
+  deadline: 2026-09-30
+  deadline_time: null
+  rolling: false
+  amount: "前瞻奈米類每年≤NT$300萬（限2年）；創新應用類每年≤NT$700萬（限3年）"
+  duration: "116/8/1–119/7/31，採分年核定多年期方式辦理"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/9b32c4a6-0842-4a51-be6d-173e7f9dfed3?l=ch"
+  source: nstc-rfp
+  source_id: "9b32c4a6-0842-4a51-be6d-173e7f9dfed3"
+  requirements: "限擇一類（前瞻奈米類或創新應用類）申請，每人以1件為限。"
+  notes: "構想書階段 (concept note)，四大方向：奈米生技醫療、奈米能源科技、奈米電子光電、奈米檢測製程。"
+  added: 2026-08-05
+
+- id: nstc-2026-surgical-innovation
+  title: "115年度「外科臨床手術創新計畫」徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: null
+  deadline: 2026-09-21
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "115/11/1–117/10/31（約2年）"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/2521c1b9-c993-4aeb-a487-789f6f927c0d?l=ch"
+  source: nstc-rfp
+  source_id: "2521c1b9-c993-4aeb-a487-789f6f927c0d"
+  requirements: null
+  notes: null
+  added: 2026-08-05
+
+- id: nstc-2026-rare-technique
+  title: "115年度「薪火相傳-稀少科研技術永續傳承計畫」試辦方案徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: null
+  deadline: 2026-09-14
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "115/11/1–116/9/30（約11個月）"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/4bf2e09a-b4a7-4392-a204-f513d82b7037?l=ch"
+  source: nstc-rfp
+  source_id: "4bf2e09a-b4a7-4392-a204-f513d82b7037"
+  requirements: null
+  notes: "試辦方案 (pilot program)，聚焦生物農學領域中稀少且具保存價值之技術傳承。"
+  added: 2026-08-05
+
+- id: nstc-2026-xenotransplant
+  title: "115年度「異種器官移植醫學研究計畫」徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-17
+  deadline: 2026-09-11
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "115/11/1–117/10/31（2年）"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/fc9f38a1-0741-4298-8373-20935a518f1a?l=ch"
+  source: nstc-rfp
+  source_id: "fc9f38a1-0741-4298-8373-20935a518f1a"
+  requirements: null
+  notes: "涵蓋異種器官移植、異種移植應用、替代器官來源技術等主題。"
+  added: 2026-08-05
+
+- id: nstc-cornet-42
+  title: "補助學研機構參與德國產學研究網絡(CORNET) 第42屆跨國聯合研究計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-16
+  deadline: 2026-10-07
+  deadline_time: null
+  rolling: false
+  amount: "每件每年上限NT$300萬"
+  duration: "2027/7/1起，為期2年"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/92768eb3-9425-4f34-9cb3-7fb05d026927?l=ch"
+  source: nstc-rfp
+  source_id: "92768eb3-9425-4f34-9cb3-7fb05d026927"
+  requirements: "須跨國合作提案（競爭前聯合研究）；中小企業需求小組應由至少5家國內企業組成。"
+  notes: "Bilateral call with Germany. NTU relays this with an earlier internal sub-deadline of 2026-10-05 — see ntu-2026-cornet-42 if/when added."
+  added: 2026-08-05
+
+- id: nstc-nwo-energy-transition
+  title: "2028-2033年度國科會與荷蘭科學研究組織 (NSTC-NWO)雙邊協議國際合作研究計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted, ai, semiconductor, other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-08-01
+  deadline: 2027-03-04
+  deadline_time: null
+  rolling: false
+  amount: "每件每年上限NT$300萬，最多5年"
+  duration: "預計2028年3月啟動，最多5年"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/26d769d9-8f44-46c4-882d-a97716cc82cf?l=ch"
+  source: nstc-rfp
+  source_id: "26d769d9-8f44-46c4-882d-a97716cc82cf"
+  requirements: "須臺荷雙方共同提出申請書，僅單方提出將不受理。"
+  notes: "主題：能源轉型，聚焦綠氫(氨)、AI、IoT、數位孿生、半導體與AI等技術。"
+  added: 2026-08-05
+
+- id: nstc-2027-startup-round1
+  title: "116年度第1梯次科研創業計畫徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-08-03
+  deadline: 2026-09-03
+  deadline_time: null
+  rolling: false
+  amount: "萌芽案：原則NT$800萬；拔尖案：原則NT$1,500萬"
+  duration: "每次補助原則不超過1年，自116/1/1起"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/20dada91-1150-4f8d-a314-a33b1909e91b?l=ch"
+  source: nstc-rfp
+  source_id: "20dada91-1150-4f8d-a314-a33b1909e91b"
+  requirements: "申請機構須為國科會『科研產業化平台』執行機構。拔尖案須為已執行萌芽案且績效良好之技術（屬接續加值型）；萌芽案本身無此限制，可獨立申請。"
+  notes: "聚焦具原創性且有重大商業潛能之破壞式創新技術成果。"
+  added: 2026-08-05
+
+- id: nstc-health-alliance-rolling
+  title: "智慧健康產學聯盟計畫-徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other, ai]
+  eligibility: [all-faculty]
+  stage: rolling
+  opens: null
+  deadline: null
+  deadline_time: null
+  rolling: true
+  amount: null
+  duration: "核給至多2年期之分年核定專案計畫"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/103ba08e-132d-420a-a17b-650163a8beb7?l=ch"
+  source: nstc-rfp
+  source_id: "103ba08e-132d-420a-a17b-650163a8beb7"
+  requirements: "須由聯盟中之醫療機構或學校提出申請。"
+  notes: "隨到隨審。聚焦AI醫療應用：語音/自動化紀錄工具、AI醫護助理、影像與生理訊號輔助診斷、Ambient AI、跌倒/離床/異常活動判讀、遠距醫療設備。"
+  added: 2026-08-05
+
+- id: ntu-2026-higher-ed-research-career
+  title: "國立臺灣大學高等教育深耕計畫－學術研究生涯發展研究計畫(深耕型)"
+  title_en: null
+  agency: ntu
+  school: ntu
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-08-03
+  deadline: 2026-10-05
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "116-118年度"
+  link: "https://ord.ntu.edu.tw/w/ordntu/news_plan_26073117012821704"
+  source: ntu-rpa
+  source_id: "news_plan_26073117012821704"
+  requirements: null
+  notes: "NTU-internal call, not an NSTC program. 頁面未列金額與詳細資格，需參閱研發處公告全文。"
+  added: 2026-08-05
+
+- id: ntu-2026-atomic-energy-collab
+  title: "國科會116年度「原子能科技學術合作研究計畫」"
+  title_en: null
+  agency: nstc
+  school: ntu
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-17
+  deadline: 2026-08-21
+  deadline_time: null
+  rolling: false
+  amount: "依審查結果核定，無固定金額上限"
+  duration: "自116/1/1起（結束日未載明）"
+  link: "https://ord.ntu.edu.tw/w/ordntu/news_plan_25052915374926478"
+  source: ntu-rpa
+  source_id: "news_plan_25052915374926478"
+  requirements: null
+  notes: "NTU internal submission deadline (2026-08-21) is earlier than the NSTC-wide deadline (2026-08-25, see NSTC rfp detail uuid 345ce19f-0f0c-478b-98b9-bfde7a06cf60) — NTU applicants must use the NTU deadline. 四大分項：核能安全科技(N1)、放射性物料安全科技(N2)、輻射防護與放射醫學科技(N3)、跨域合作與風險溝通(N4)。"
+  added: 2026-08-05
+
+- id: ntu-2026-humanities-visiting
+  title: "國科會116年度「人文及社會科學領域學者國內訪問研究計畫」"
+  title_en: null
+  agency: nstc
+  school: ntu
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-01
+  deadline: 2026-08-27
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "116/8/1起（至多2年）"
+  link: "https://ord.ntu.edu.tw/w/ordntu/news_plan_25071511471055901"
+  source: ntu-rpa
+  source_id: "news_plan_25071511471055901"
+  requirements: "推薦機構編制內按月支給待遇之在職專任教師，且申請截止日前已在推薦機構連續任職2年以上；最近2年未曾獲本會補助科學與技術人員國外短期研究或本方案研究者。"
+  notes: "NTU internal submission deadline (2026-08-27) is earlier than the NSTC-wide deadline (2026-08-31, see NSTC rfp detail uuid 61866c25-1b0f-49fd-bec3-1bd474cace30)."
+  added: 2026-08-05
+
+- id: nstc-has-2027-hungary-exchange
+  title: "公告徵求2027-2028年國科會與匈牙利科學院 (NSTC-HAS)雙邊合作研究人員交流互訪PPP計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-08-01
+  deadline: 2026-09-30
+  deadline_time: null
+  rolling: false
+  amount: "每案每年最高NT$24萬（旅費/保險，不含研究費）"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/1b20a1d0-998a-4155-ac4f-82fb08f1e4a8?l=ch"
+  source: nstc-rfp
+  source_id: "1b20a1d0-998a-4155-ac4f-82fb08f1e4a8"
+  requirements: "雙方須分別提送申請，僅單方提出申請則合作案不成立。"
+  notes: "強調培養國內年輕研究人員國際合作經驗，無特定技術子領域。"
+  added: 2026-08-05
+
+- id: nstc-rs-2027-uk-exchange
+  title: "公開徵求2027年國科會與英國皇家學會（NSTC-RS）雙邊合作人員交流計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-30
+  deadline: 2026-09-24
+  deadline_time: null
+  rolling: false
+  amount: "每件每年上限NT$24萬，另可支用最高NT$6萬/年消耗性器材及雜支"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/b94fbbc8-ab49-426c-9ed5-145510b945ac?l=ch"
+  source: nstc-rfp
+  source_id: "b94fbbc8-ab49-426c-9ed5-145510b945ac"
+  requirements: "限自然科學、工程科學、生物科學、醫學（非臨床）及農業科學領域，排除人文社科及臨床醫學；需雙邊同步申請。"
+  notes: null
+  added: 2026-08-05
+
+- id: nstc-2026-indigenous-research
+  title: "國家科學及技術委員會116年度「原住民族研究專案計畫」徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-06-29
+  deadline: 2026-08-13
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/d7f2c799-d22d-4f54-b865-05a0ebb40e29?l=ch"
+  source: nstc-rfp
+  source_id: "d7f2c799-d22d-4f54-b865-05a0ebb40e29"
+  requirements: null
+  notes: "重點方向包含工程韌性智慧應用與服務示範、部落氣候及災害風險韌性、原住民族植物種原之開發與應用等。"
+  added: 2026-08-05
+
+- id: nstc-2026-ethnic-studies
+  title: "國家科學及技術委員會116年度「族群研究專案計畫」徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-06-29
+  deadline: 2026-08-13
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/3717503c-762e-4a74-97cd-7c91f328f73e?l=ch"
+  source: nstc-rfp
+  source_id: "3717503c-762e-4a74-97cd-7c91f328f73e"
+  requirements: null
+  notes: "涵蓋族群關係資料庫研究、族群研究理論與方法創新、國家與族群政策等。"
+  added: 2026-08-05
+
+- id: nstc-riken-2027-taiwan-japan
+  title: "2027-2029年度「臺日(NSTC-RIKEN)雙邊協議國際合作研究計畫」"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [ai, semiconductor, other, unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-06-18
+  deadline: 2026-09-18
+  deadline_time: null
+  rolling: false
+  amount: "每件每年不超過NT$110萬（約合日圓550萬）"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/1d9a7525-71ab-4bac-9fd9-7221c1742113?l=ch"
+  source: nstc-rfp
+  source_id: "1d9a7525-71ab-4bac-9fd9-7221c1742113"
+  requirements: "屬加值型：申請人須為刻正執行本會補助研究類計畫之主持人（不含規劃推動、雙邊協議國合、產學合作等類型計畫），非既有計畫者不得申請。"
+  notes: "三大建議領域：次世代化合物半導體、人工智慧或資訊科學、精準醫療與健康照護。"
+  added: 2026-08-05
+
+- id: nstc-csic-2027-taiwan-spain
+  title: "2027-2028年臺西（NSTC-CSIC）雙邊人員交流計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-06-15
+  deadline: 2026-09-14
+  deadline_time: null
+  rolling: false
+  amount: "每案每年最高NT$42萬（兩年總計≤NT$84萬），預計核定約4案"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/182ac508-044d-4fc2-aa77-78ef82610735?l=ch"
+  source: nstc-rfp
+  source_id: "182ac508-044d-4fc2-aa77-78ef82610735"
+  requirements: null
+  notes: "聚焦科技交流與互訪（指導、培訓或執行研究任務），無特定技術子領域。"
+  added: 2026-08-05
+
+- id: nstc-2026-academic-society-outreach
+  title: "116年度全國性學術團體辦理學術推廣業務計畫徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-06-01
+  deadline: 2026-08-05
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "116/1/1–12/31（可核定1–3年）"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/2cf3a0a0-3a1c-4b85-9514-d3cbf8c9f8a4?l=ch"
+  source: nstc-rfp
+  source_id: "2cf3a0a0-3a1c-4b85-9514-d3cbf8c9f8a4"
+  requirements: "限經中央主管機關核准立案5年以上之全國性學術團體申請。"
+  notes: "補助項目包括出版學術期刊、科普教育活動、學術研討會、學術推廣活動。"
+  added: 2026-08-05
+
+- id: nstc-inserm-2027-france-exchange
+  title: "2027年國科會與法國國家健康與醫學研究院(NSTC-Inserm)人員交流互訪計畫及雙邊研討會公告徵件"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other, ai]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-04-20
+  deadline: 2026-09-15
+  deadline_time: null
+  rolling: false
+  amount: "人員交流每案上限NT$38萬；雙邊研討會每案上限NT$45萬"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/b10a6b63-0741-4a8f-8282-81f6da8d0f04?l=ch"
+  source: nstc-rfp
+  source_id: "b10a6b63-0741-4a8f-8282-81f6da8d0f04"
+  requirements: null
+  notes: "聚焦健康及醫療科技（AI醫療應用、精準醫療、醫療器材）、基因體學、癌症、健康老化、神經科學、新興傳染病。"
+  added: 2026-08-05
+
+- id: nstc-frontier-tech-industry-collab
+  title: "前瞻技術產學合作計畫徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: rolling
+  opens: null
+  deadline: null
+  deadline_time: null
+  rolling: true
+  amount: null
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/e86a58e1-6dbc-4a8b-b32f-ae5042c31c16?l=ch"
+  source: nstc-rfp
+  source_id: "e86a58e1-6dbc-4a8b-b32f-ae5042c31c16"
+  requirements: "研發型須先送構想書審查。"
+  notes: "隨到隨審。分三型：前瞻技術研發型、產學研發中心型、領先技術發展型；聚焦前瞻科研成果產業化與新興產業領域技術發展。"
+  added: 2026-08-05
+
+- id: nstc-dfg-2026-taiwan-germany
+  title: "臺灣-德國(NSTC-DFG)雙邊研討會及研究訪問計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: rolling
+  opens: null
+  deadline: null
+  deadline_time: null
+  rolling: true
+  amount: "研討會每場NT$50萬；研究訪問合計NT$35萬；合併型上限NT$100萬"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/f5a81ac2-ee3d-44fe-bc2f-7efdf8049e93?l=ch"
+  source: nstc-rfp
+  source_id: "f5a81ac2-ee3d-44fe-bc2f-7efdf8049e93"
+  requirements: "須於活動前6個月提出申請；雙方計畫主持人及申請內容需相同。"
+  notes: "隨到隨審（須於活動前六個月提出申請）。"
+  added: 2026-08-05
+
+- id: nstc-horizon-europe-bridging
+  title: "徵求成功參與歐盟跨國團隊科研暨創新計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: rolling
+  opens: null
+  deadline: null
+  deadline_time: null
+  rolling: true
+  amount: "上限NT$300萬/年（經審議通過之重大國家科技優先項目可例外）"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/c1a582ae-95bc-4449-908f-590d6cb409ea?l=ch"
+  source: nstc-rfp
+  source_id: "c1a582ae-95bc-4449-908f-590d6cb409ea"
+  requirements: "計畫須經歐盟委員會審查通過並正式參與Horizon Europe，且僅補助未獲歐盟補助之部分（屬銜接型，非既有國科會計畫加值）。"
+  notes: "鎖定歐盟展望歐洲(Horizon Europe)框架計畫，涉氣候變遷、永續經濟成長、產業競爭力；持續受理期間110/1/1–116/12/31。"
+  added: 2026-08-05
+
+- id: nstc-mpi-center-pilot
+  title: "補助學研機構與德國馬克斯普朗克研究院(MPI)合設「國際馬克斯普朗克中心 International Max Planck Center」先導計畫申請須知"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: rolling
+  opens: null
+  deadline: null
+  deadline_time: null
+  rolling: true
+  amount: "補助比例約20%–50%為原則；第一期以5年為原則"
+  duration: null
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/7b26f6e5-43cf-4703-a797-3f186ec9096b?l=ch"
+  source: nstc-rfp
+  source_id: "7b26f6e5-43cf-4703-a797-3f186ec9096b"
+  requirements: "須先由德方MPI核准設立中心，臺方始得提送計畫構想書；PI僅得支領1份研究主持費。"
+  notes: "聚焦前瞻科學研究與培育科研人才，透過與國際頂尖研究機構共同設立研究中心。"
+  added: 2026-08-05

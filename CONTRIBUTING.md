@@ -15,6 +15,9 @@ one file: `data/sources/calls.yaml`.
   agency: nstc                       # required — who funds it (nstc | ntu | ...), see data/sources/tags.yaml
   school: null                       # optional — which school's portal/deadline this is scoped through, or null
   fields: [cs]                       # required, at least one — see tags.yaml `fields`
+  types: [individual]                # required, at least one — the funding *mechanism*
+                                      #   (individual/international/travel/industry/...),
+                                      #   see tags.yaml `types` and "Choosing `types`" below
   eligibility: [all-faculty]         # required, at least one — see tags.yaml `eligibility`
   stage: proposal                    # required — concept | proposal | rolling
   opens: 2026-07-01                  # optional ISO date (YYYY-MM-DD)
@@ -83,14 +86,41 @@ Two different optional free-text fields exist for a reason — keep them separat
   `other`. Only tag `unrestricted` for calls that are genuinely topic-free administrative
   mechanisms (exchanges, industry-collaboration platforms, society grants, center pilots).
 
+### Choosing `types` tags: the funding mechanism
+
+`types` is a separate axis from `fields` — it answers "what *kind* of funding is this",
+not "what subject". A call is usually more than one type at once:
+
+- **`individual`** — a standard PI-led research grant (the largest category: most
+  single-topic NSTC calls like `nstc-2026-xenotransplant`).
+- **`international`** — any bilateral/multilateral agreement or cross-border mechanism
+  (e.g. `nstc-riken-2027-taiwan-japan`, `nstc-cornet-42`).
+- **`travel`** — funds personnel movement/visiting research, domestic or international
+  (e.g. `ntu-2026-humanities-visiting` is domestic travel; most bilateral *exchange*
+  calls like `nstc-has-2027-hungary-exchange` are both `international` and `travel`).
+- **`industry`** — industry-academia collaboration or commercialization
+  (e.g. `nstc-2027-startup-round1`, `nstc-health-alliance-rolling`).
+- **`talent`** — career-development/talent-cultivation programs, independent of subject
+  (e.g. `ntu-2026-higher-ed-research-career`).
+- **`infrastructure`** — funds setting up a center, lab, or shared facility rather than a
+  single research project (e.g. `nstc-mpi-center-pilot`).
+- **`outreach`** — academic-society or public-facing science-promotion funding
+  (e.g. `nstc-2026-academic-society-outreach`).
+- **`mission`** — large mission-specific national projects tied to a fixed deliverable/
+  timeline rather than an open research question (e.g. `nstc-2026-formosat-payload`).
+
+If a call is a genuine bilateral research-collaboration grant (not just a travel/exchange
+mechanism), tag `international` alone is usually right; add `travel` only if the funding
+is explicitly for personnel visits/exchange rather than research costs.
+
 3. **民國 (ROC) → western year**: NSTC and most Taiwan agency pages use ROC years (民國).
    Convert before writing the entry: western year = ROC year + 1911 (e.g. 民國115年 =
    2026, 民國116年 = 2027). Getting this wrong is the single most common mistake — double
    check every date you copy from a source page.
-4. If your call needs a `fields`, `eligibility`, `agency`, or `school` tag that doesn't
-   exist yet in `data/sources/tags.yaml`, add it there **in the same PR** — the validator
-   hard-fails on unregistered tags on purpose, so the filter UI's vocabulary never drifts
-   out of sync with the data.
+4. If your call needs a `fields`, `types`, `eligibility`, `agency`, or `school` tag that
+   doesn't exist yet in `data/sources/tags.yaml`, add it there **in the same PR** — the
+   validator hard-fails on unregistered tags on purpose, so the filter UI's vocabulary
+   never drifts out of sync with the data.
 5. Open a PR. `.github/workflows/validate.yml` runs automatically and must pass before
    merge.
 

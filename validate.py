@@ -39,9 +39,9 @@ def load_yaml(path):
 
 ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 TIME_RE = re.compile(r"^([01]\d|2[0-3]):([0-5]\d)$")
-REQUIRED_FIELDS = ["id", "title", "agency", "fields", "eligibility", "stage", "link", "source", "added"]
+REQUIRED_FIELDS = ["id", "title", "agency", "fields", "types", "eligibility", "stage", "link", "source", "added"]
 VALID_SOURCES = {"manual", "nstc-rfp", "ntu-rpa"}
-TAG_GROUPS = ["fields", "agencies", "schools", "eligibility", "stages"]
+TAG_GROUPS = ["fields", "types", "agencies", "schools", "eligibility", "stages"]
 
 
 def load_tag_sets(tags_doc):
@@ -139,6 +139,7 @@ def validate(calls, tags_doc):
                     )
 
         check_tags("fields", "fields")
+        check_tags("types", "types")
         check_tags("eligibility", "eligibility")
         check_tags("agency", "agencies")
         check_tags("school", "schools")

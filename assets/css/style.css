@@ -130,6 +130,14 @@ main { max-width: 860px; margin: 0 auto; }
   background: var(--chip-bg);
   color: var(--chip-fg);
 }
+/* Grant type (mechanism: individual/international/travel/industry/...) is a different
+   axis from subject-matter tags (field/org/eligibility) — a subtle border sets it apart
+   without introducing a whole new color. */
+.tag-chip.type-chip {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
 
 .call-requirements { font-size: 0.85rem; color: var(--fg); margin: 0.4rem 0 0; }
 .call-notes { font-size: 0.85rem; color: var(--muted); margin: 0.4rem 0 0; }

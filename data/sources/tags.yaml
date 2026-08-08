@@ -1,9 +1,9 @@
-# Controlled vocabulary for calls.yaml. Every tag used in calls.yaml's `fields`,
+# Controlled vocabulary for calls.yaml. Every tag used in calls.yaml's `fields`, `types`,
 # `agencies`, `schools`, `eligibility`, and `stage` fields must be registered here first —
 # the validator hard-fails on unregistered tags. This file also feeds the frontend's
 # filter-chip labels, so `name` is the human-readable display text shown in the UI.
 #
-# Adding a new field/agency/school/eligibility category = add a row here. No code change.
+# Adding a new field/type/agency/school/eligibility category = add a row here. No code change.
 #
 # `fields` is a two-level hierarchy: `domain: true` tags (cs, other) are top-level;
 # `parent: cs` tags are CS/IE subfields — selecting the `cs` chip in the UI also surfaces
@@ -23,6 +23,21 @@ fields:
   - {tag: iot, name: "IoT / Digital Twin 物聯網與數位孿生", parent: cs}
   - {tag: other, name: "Other Fields 其他領域", domain: true}
   - {tag: unrestricted, name: "Open to Any Field 不限領域", unrestricted: true}
+
+# `types` classifies the funding *mechanism* — how the money is structured and what kind
+# of activity it supports — orthogonal to `fields` (subject domain). A call is usually
+# more than one type at once (e.g. a bilateral research grant is both `international` and
+# often `travel`, since most bilateral mechanisms fund personnel exchange alongside or
+# instead of research costs). At least one required per entry.
+types:
+  - {tag: individual, name: "Individual/Team Research 個別型研究計畫"}
+  - {tag: international, name: "International Collaboration 國際合作"}
+  - {tag: travel, name: "Travel / Exchange 交流訪問"}
+  - {tag: industry, name: "Industry Collaboration 產學合作"}
+  - {tag: talent, name: "Talent Development 人才培育"}
+  - {tag: infrastructure, name: "Center / Infrastructure 中心建置"}
+  - {tag: outreach, name: "Academic Outreach 學術推廣"}
+  - {tag: mission, name: "Mission-Specific Project 任務型計畫"}
 
 agencies:
   - {tag: nstc, name: "國科會 NSTC"}

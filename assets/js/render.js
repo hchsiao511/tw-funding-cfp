@@ -3,11 +3,12 @@ const CLOSING_SOON_DAYS = 14;
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
 // --- TAG LABEL LOOKUPS (built once from window.TAGS) ---
-let TAG_NAME = { fields: {}, org: {}, eligibility: {}, stages: {} };
+let TAG_NAME = { fields: {}, types: {}, org: {}, eligibility: {}, stages: {} };
 
 function buildTagNameLookups(tags) {
   const toMap = (list) => Object.fromEntries((list || []).map((e) => [e.tag, e.name]));
   TAG_NAME.fields = toMap(tags.fields);
+  TAG_NAME.types = toMap(tags.types);
   TAG_NAME.org = toMap(buildOrgTagList(tags));
   TAG_NAME.eligibility = toMap(tags.eligibility);
   TAG_NAME.stages = toMap(tags.stages);
@@ -57,9 +58,10 @@ function formatDeadline(entry) {
 }
 
 // --- RENDER ---
-function chipList(tags, values) {
+function chipList(tags, values, extraClass) {
+  const cls = extraClass ? `tag-chip ${extraClass}` : "tag-chip";
   return (values || [])
-    .map((v) => `<span class="tag-chip">${escapeHtml(tags[v] || v)}</span>`)
+    .map((v) => `<span class="${cls}">${escapeHtml(tags[v] || v)}</span>`)
     .join("");
 }
 
@@ -92,6 +94,7 @@ function renderRow(entry, stateClass) {
           ${escapeHtml(entry.title)}
         </a>
         <div class="tag-row">
+          ${chipList(TAG_NAME.types, entry.types, "type-chip")}
           ${chipList(TAG_NAME.org, orgValues)}
           ${chipList(TAG_NAME.fields, entry.fields)}
           ${chipList(TAG_NAME.eligibility, entry.eligibility)}

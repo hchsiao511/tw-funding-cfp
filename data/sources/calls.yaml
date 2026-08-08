@@ -15,6 +15,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: concept
   opens: 2026-07-24
@@ -36,6 +37,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: proposal
   opens: null
@@ -57,6 +59,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: proposal
   opens: null
@@ -78,6 +81,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-17
@@ -99,6 +103,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international, industry]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-16
@@ -120,6 +125,7 @@
   agency: nstc
   school: null
   fields: [unrestricted, ai, semiconductor, other]
+  types: [international]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-08-01
@@ -141,6 +147,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [industry]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-08-03
@@ -162,6 +169,7 @@
   agency: nstc
   school: null
   fields: [other, ai]
+  types: [industry]
   eligibility: [all-faculty]
   stage: rolling
   opens: null
@@ -183,6 +191,7 @@
   agency: ntu
   school: ntu
   fields: [unrestricted]
+  types: [talent]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-08-03
@@ -204,6 +213,7 @@
   agency: nstc
   school: ntu
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-17
@@ -225,6 +235,7 @@
   agency: nstc
   school: ntu
   fields: [other]
+  types: [talent, travel]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-01
@@ -246,6 +257,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international, travel]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-08-01
@@ -267,6 +279,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [international, travel]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-30
@@ -288,6 +301,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-06-29
@@ -309,6 +323,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [individual]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-06-29
@@ -330,6 +345,7 @@
   agency: nstc
   school: null
   fields: [ai, semiconductor, other, unrestricted]
+  types: [international]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-06-18
@@ -351,6 +367,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international, travel]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-06-15
@@ -372,6 +389,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [outreach]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-06-01
@@ -393,6 +411,7 @@
   agency: nstc
   school: null
   fields: [other, ai]
+  types: [international, travel]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-04-20
@@ -414,6 +433,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [industry]
   eligibility: [all-faculty]
   stage: rolling
   opens: null
@@ -435,6 +455,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international, travel]
   eligibility: [all-faculty]
   stage: rolling
   opens: null
@@ -456,6 +477,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international]
   eligibility: [all-faculty]
   stage: rolling
   opens: null
@@ -477,6 +499,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international, infrastructure]
   eligibility: [all-faculty]
   stage: rolling
   opens: null
@@ -498,6 +521,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [international, travel]
   eligibility: [phd-student, postdoc]
   stage: proposal
   opens: 2026-08-01
@@ -519,6 +543,7 @@
   agency: nstc
   school: null
   fields: [other]
+  types: [mission]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-09
@@ -540,6 +565,7 @@
   agency: nstc
   school: null
   fields: [unrestricted]
+  types: [industry]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-05-08
@@ -561,6 +587,7 @@
   agency: nstc
   school: ntu
   fields: [unrestricted, ai, semiconductor, other]
+  types: [international]
   eligibility: [all-faculty]
   stage: proposal
   opens: 2026-07-29

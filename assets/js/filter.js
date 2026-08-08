@@ -5,11 +5,12 @@
 // through NTU's portal).
 const ACTIVE_FILTERS = {
   field: new Set(),
+  type: new Set(),
   org: new Set(),
   eligibility: new Set(),
 };
 
-const URL_PARAM_BY_GROUP = { field: "field", org: "org", eligibility: "eligibility" };
+const URL_PARAM_BY_GROUP = { field: "field", type: "type", org: "org", eligibility: "eligibility" };
 
 // Field tags marked `unrestricted: true` in tags.yaml (currently just "unrestricted"
 // itself) impose no field restriction on the call — a generic bilateral exchange program
@@ -73,6 +74,7 @@ function buildFilterBar(tags) {
   const bar = document.getElementById("filter-bar");
   bar.innerHTML = "";
   bar.appendChild(buildFieldFilterGroup(tags.fields || []));
+  bar.appendChild(buildFilterGroup("type", "類型 Grant Type", tags.types || []));
   bar.appendChild(buildFilterGroup("org", "補助 / 學校 Agency / School", buildOrgTagList(tags)));
   bar.appendChild(buildFilterGroup("eligibility", "資格 Eligibility", tags.eligibility || []));
 }
@@ -170,6 +172,7 @@ function toggleChip(group, tag, chipEl) {
 function rowMatchesFilters(entry) {
   return (
     fieldGroupMatches(ACTIVE_FILTERS.field, entry.fields) &&
+    groupMatches(ACTIVE_FILTERS.type, entry.types) &&
     groupMatches(ACTIVE_FILTERS.org, [entry.agency, entry.school].filter(Boolean)) &&
     groupMatches(ACTIVE_FILTERS.eligibility, entry.eligibility)
   );

@@ -491,3 +491,87 @@
   requirements: "須先由德方MPI核准設立中心，臺方始得提送計畫構想書；PI僅得支領1份研究主持費。"
   notes: "聚焦前瞻科學研究與培育科研人才，透過與國際頂尖研究機構共同設立研究中心。"
   added: 2026-08-05
+
+- id: nstc-2027-ivf-central-europe
+  title: "2027年博士生與博士後研究人員赴中歐國際維謝格勒基金會（IVF）成員國研究進修計畫"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [phd-student, postdoc]
+  stage: proposal
+  opens: 2026-08-01
+  deadline: 2026-09-30
+  deadline_time: null
+  rolling: false
+  amount: "博士生每年NT$90萬；博士後研究人員每年NT$150萬（含交通/生活/保險費，依核定期間比例發給）"
+  duration: "10–12個月連續研究期間，不得分段或展延"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/befde1c0-5947-48ea-8277-f4c9e71dbc78?l=ch"
+  source: nstc-rfp
+  source_id: "befde1c0-5947-48ea-8277-f4c9e71dbc78"
+  requirements: "須具備3年內英語檢定成績證明；須取得V4國家指導教授/研究團隊接受函；須2位學術推薦人（博士生須至少1位為國內學者，博士後須為指導教授）；役男受兵役限制（以1年為限）。"
+  notes: "限中歐維謝格勒基金會（Visegrad Fund）成員國研究進修：捷克、匈牙利、波蘭、斯洛伐克。"
+  added: 2026-08-08
+
+- id: nstc-2026-formosat-payload
+  title: "福衛衛星科學酬載開發與應用專案"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-09
+  deadline: 2026-08-17
+  deadline_time: null
+  rolling: false
+  amount: "福衛8F衛星：NT$3,800萬；福衛9B衛星：NT$3,600萬（依年度分階段撥款）"
+  duration: "自115年10月1日起執行，依衛星發射時程分年編列"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/6eb198f3-99fe-44e1-86de-64a8bfaca439?l=ch"
+  source: nstc-rfp
+  source_id: "6eb198f3-99fe-44e1-86de-64a8bfaca439"
+  requirements: "僅受理單一整合型提案；須符合福衛8F/9B衛星發射時程與軌道參數規劃。"
+  notes: "聚焦衛星科學酬載開發與應用，對應福衛8F、9B衛星發射計畫。"
+  added: 2026-08-08
+
+- id: nstc-2026-industry-academia-alliance
+  title: "116年度「產學技術聯盟合作計畫(產學小聯盟)」徵求公告"
+  title_en: null
+  agency: nstc
+  school: null
+  fields: [unrestricted]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-05-08
+  deadline: 2026-08-31
+  deadline_time: null
+  rolling: false
+  amount: null
+  duration: "分兩階段：第一階段建立自主營運，第二階段擴大與區域整合"
+  link: "https://www.nstc.gov.tw/folksonomy/rfpDetail/1f910ac0-e61c-4ed9-9f45-3f3b7d30afb2?l=ch"
+  source: nstc-rfp
+  source_id: "1f910ac0-e61c-4ed9-9f45-3f3b7d30afb2"
+  requirements: "申請人須具備過去研發成果，作為核心技術實驗室之基礎。"
+  notes: "核心技術實驗室模式：學研單位設立實驗室與企業合作提供服務，強化產業競爭力。"
+  added: 2026-08-08
+
+- id: ntu-2027-nwo-energy-transition
+  title: "2028-2033年度國科會與荷蘭科學研究組織 (NSTC-NWO)雙邊協議國際合作研究計畫"
+  title_en: null
+  agency: nstc
+  school: ntu
+  fields: [unrestricted, ai, semiconductor, other]
+  eligibility: [all-faculty]
+  stage: proposal
+  opens: 2026-07-29
+  deadline: 2027-03-02
+  deadline_time: "17:00"
+  rolling: false
+  amount: "每件每年上限NT$300萬，最多5年"
+  duration: "預計2028年3月啟動，最多5年"
+  link: "https://ord.ntu.edu.tw/w/ordntu/news_plan_26080712100426032"
+  source: ntu-rpa
+  source_id: "news_plan_26080712100426032"
+  requirements: "須完成校內簽核流程，並同時將申請書送至國科會線上系統，以利研發處如期送件；須檢附「國科會國合計畫校內申請書」。"
+  notes: "NTU internal submission deadline (2027-03-02 17:00) is slightly earlier than the NSTC-wide deadline (2027-03-04, see nstc-nwo-energy-transition)."
+  added: 2026-08-08

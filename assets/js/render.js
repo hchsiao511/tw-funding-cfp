@@ -150,10 +150,22 @@ function renderList() {
     `顯示 ${matching.length} / ${(window.CALLS || []).length} 筆計畫`;
 }
 
+// --- LAST UPDATED ---
+// Derived from the freshest `added` (curation date) across all entries, not a build
+// timestamp — this tells a visitor how recently the dataset itself was actually checked
+// against the official sites, which matters more than when the site was last deployed.
+function renderLastUpdated() {
+  const dates = (window.CALLS || []).map((e) => e.added).filter(Boolean);
+  if (dates.length === 0) return;
+  const latest = dates.reduce((a, b) => (a > b ? a : b));
+  document.getElementById("last-updated").textContent = `資料最後更新：${latest}`;
+}
+
 // --- BOOTSTRAP ---
 document.addEventListener("DOMContentLoaded", () => {
   buildTagNameLookups(window.TAGS || {});
   loadFiltersFromUrl();
   buildFilterBar(window.TAGS || {});
   renderList();
+  renderLastUpdated();
 });

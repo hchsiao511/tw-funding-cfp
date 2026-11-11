@@ -131,6 +131,21 @@ embedded because NSTC/NTU calls recur annually under near-identical titles — t
 ids collision-free across years and lets past (closed) calls stay in the dataset as
 history rather than needing renumbering.
 
+### One call, two deadlines (school internal vs. NSTC)
+
+Universities often relay an NSTC call with an earlier internal deadline. Keep **one entry**
+per call, not one per deadline:
+
+- `deadline` / `deadline_time` = the **earliest** deadline (usually the school's internal one),
+  and set `school` to that school.
+- `notes` names the other deadline and links the school's announcement, e.g.
+  `"Deadline shown is NTU's internal deadline (2026-12-31 09:00); NSTC-wide deadline is
+  2027-01-07. NTU announcement: https://..."`.
+- Keep `link`/`source` pointing at the official NSTC page.
+
+A school-scoped entry with no NSTC counterpart on the list page (e.g. `ntu-2027-women-in-science`)
+stays as its own entry.
+
 ## Previewing your change locally
 
 ```bash

@@ -50,6 +50,7 @@ eligibility:
   - {tag: all-faculty, name: "All Faculty 教師"}
   - {tag: new-faculty, name: "New Faculty 新進教師"}
   - {tag: faculty-under-45, name: "Faculty Under 45 未滿45歲教師"}
+  - {tag: masters-student, name: "Master's Students 碩士生"}
   - {tag: phd-student, name: "PhD Students 博士生"}
   - {tag: postdoc, name: "Postdocs 博士後研究員"}
 
